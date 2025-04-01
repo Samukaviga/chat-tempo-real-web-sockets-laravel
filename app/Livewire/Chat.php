@@ -16,10 +16,7 @@ class Chat extends Component
 
     public $mensagem = "";
     public $mensagens;
-
     public $users;
-
-    public $status = 'offiline';
 
 
     protected $listeners = [
@@ -56,7 +53,6 @@ class Chat extends Component
             $this->mensagem = "";
         }
     }
-
 
 
     public function receberMensagem()

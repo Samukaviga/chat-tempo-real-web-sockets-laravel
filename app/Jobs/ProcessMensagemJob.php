@@ -22,9 +22,6 @@ class ProcessMensagemJob implements ShouldQueue
 
     public function handle(): void
     {
-        // Dispara o evento para que a mensagem seja enviada a outros usuários
-        // broadcast(new EnviaMensagemEvent($this->mensagem))->toOthers();
-
         EnviaMensagemEvent::dispatch($this->mensagem);
     }
 }

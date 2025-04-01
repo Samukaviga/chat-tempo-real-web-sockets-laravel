@@ -16,7 +16,7 @@
                         <div>
                             <div class="font-medium text-gray-100">{{ $user->name }}</div>
                             <div class="text-sm text-gray-100">
-                                {{ $user->status == 1 ? 'Online' : 'Offiline' }}
+                                {{ $user->status == 1 ? 'Online' : 'offline' }}
                             </div>
                         </div>
                     </div>
@@ -25,7 +25,7 @@
 
         </ul>
     </div>
-
+    <!-- Fim Sidebar de usuários -->
 
     <div class="md:col-span-5 flex flex-col pb-40 md:pb-20 lg:2  h-screen">
 
@@ -63,7 +63,8 @@
 
         <!-- input -->
 
-        <div class="fixed bottom-0 left-0 right-0 bg-gray-900 p-3 border-t border-gray-400 shadow-md">
+        <div
+            class="fixed bottom-0 left-0 md:left-[calc(100%/6)] right-0 bg-gray-900 p-3 border-t border-gray-400 shadow-md">
             <div class="flex items-center px-3 py-2 rounded-lg">
                 <textarea wire:keydown.enter="enviarMensagem" wire:model="mensagem"
                     class="w-full p-2.5 text-gray-50 text-sm bg-gray-800 border rounded-lg focus:ring-gray-500 focus:border-gray-500"

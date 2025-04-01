@@ -14,7 +14,6 @@ class UserStatusEvent implements ShouldBroadcast
 {
     use Dispatchable, InteractsWithSockets, SerializesModels;
 
-
     public $status;
     public $user_id;
 
